@@ -1,0 +1,64 @@
+img#mainImage2{
+	opacity: 0.5;
+	display: none;
+}
+#contCanvas{
+	border: 1px solid #F00;
+	margin: 0 auto;
+	position: relative;
+	height: 500px;
+	width: 500px;
+	overflow: hidden;
+}
+
+/* FILTERS */
+img#mainImage{
+	filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(0%) sepia(0%);
+	-webkit-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(0%) sepia(0%);
+	-moz-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(0%) sepia(0%);
+	-o-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(0%) sepia(0%);
+	-ms-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(0%) sepia(0%);
+}
+.invert{
+	filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(0%) sepia(0%) !important;
+	-webkit-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(0%) sepia(0%) !important;
+	-moz-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(0%) sepia(0%) !important;
+	-o-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(0%) sepia(0%) !important;
+	-ms-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(0%) sepia(0%) !important;
+}
+.blackAndWhite{
+	filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(0%) !important;
+	-webkit-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(0%) !important;
+	-moz-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(0%) !important;
+	-o-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(0%) !important;
+	-ms-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(0%) !important;
+}
+.negative{
+	filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(100%) sepia(0%) !important;
+	-webkit-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(100%) sepia(0%) !important;
+	-moz-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(100%) sepia(0%) !important;
+	-o-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(100%) sepia(0%) !important;
+	-ms-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(100%) grayscale(100%) sepia(0%) !important;
+}
+.sepia{
+	filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(100%) !important;
+	-webkit-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(100%) !important;
+	-moz-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(100%) !important;
+	-o-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(100%) !important;
+	-ms-filter: blur(0px) brightness(1) saturate(100%) hue-rotate(0deg) contrast(100%) invert(0%) grayscale(100%) sepia(100%) !important;
+}
+.vignette {
+	-webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
+	-moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
+	box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
+}
+
+/* LAYOUT */
+#filters{
+	z-index: 500;
+	background: #111;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	border-top: 2px solid #000;
+}

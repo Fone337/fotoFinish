@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FotoFinish</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">FotoFinish</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a id="upload">Upload</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        
+        <div class="span9">
+          <div id="contCanvas">
+            <img src="img/photos/m5.jpg" id="mainImage">
+            <img src="img/photos/m5.jpg" id="mainImage2">
+          </div>
+        </div>
+
+        <div id="controls" class="span3">
+          <h3>Adjustments</h3>
+          <label>Blur:</label>
+          <input type="range" name="points" min="0" max="10" class="slider" id="blur" value="0">
+          <label>Brightness:</label>
+          <input type="range" name="brightness" min="0" max="10" step="0.10" class="slider" id="brightness" value="1">
+          <label>Saturation:</label>
+          <input type="range" name="saturate" min="20" max="1000" step="1" class="slider" id="saturate" value="100">
+          <label>Hue:</label>
+          <input type="range" name="hue" min="0" max="360" step="1" class="slider" id="hue" value="0">
+          <label>Contrast:</label>
+          <input type="range" name="contrast" min="0" max="1000" step="1" class="slider" id="contrast" value="100">
+
+          <br>
+
+          <a id="layer2">Layer 2?</a>
+        </div>
+
+      </div>
+
+    </div> <!-- /container -->
+
+      <div id="filters">
+        <div class="span12">
+            <h3>Filters</h3>
+            <div class="row">
+              <span class="span2 preset normal vignette">
+                <img src="img/photos/m5.jpg" id="bmw">
+              </span>
+              <span class="span2 preset invert vignette">
+                <img src="img/photos/m5.jpg" id="bmw">
+              </span>
+              <span class="span2 preset blackAndWhite vignette">
+                <img src="img/photos/m5.jpg" id="bmw">
+              </span>
+              <span class="span2 preset negative vignette">
+                <img src="img/photos/m5.jpg" id="bmw">
+              </span>
+              <span class="span2 preset sepia vignette">
+                <img src="img/photos/m5.jpg" id="bmw">
+              </span>
+              <span class="span2 preset random">
+                <img src="img/photos/m5.jpg" id="bmw" class="vignette">
+              </span>
+            </div>
+        </div>
+      </div>
+
+    <!-- UPLOADER -->
+    <div id="uploader" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <form action="uploader.php" method="post" enctype="multipart/form-data">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Choose a photo</h3>
+      </div>
+      <div class="modal-body">
+        <input type="file" name="file">
+      </div>
+      <div class="modal-footer" id="complete">
+        <button class="btn btn-primary" id="yes">Upload</button>
+      </div>
+    </form>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
